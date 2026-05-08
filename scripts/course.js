@@ -116,3 +116,7 @@ wddCourse.addEventListener("click", () => {
     const credit = wddCourses.reduce((acc, course) => acc + course.credits, 0)
     document.getElementById('credits').innerHTML = `${credit}`;
 });
+
+
+const credit = courses.reduce((acc, course) => acc + course.credits, 0)
+document.getElementById('credits').innerHTML = `${credit}`;    
