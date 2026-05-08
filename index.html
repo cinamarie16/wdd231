@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 Course Home Page</title>
+    <meta name="description" content="WDD231 week01 assignment to create a course home page.">
+    <meta name="author" content="Lucina M. Huff">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hdr-top">
+            <img src="images/code-slash.svg" alt="site logo" width="1" height="1">
+            <span>Lucina Huff</span>
+
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#"></a>Chamber Project</li>
+                <li><a href="#"></a>Final Project</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Lucina M. Huff is a proud indie author that loves fantasy, romance, and fairy tales. She was born and raised in the
+            stunning and diverse PNW city of Tacoma, WA. Since marrying her own handsome prince charming, she has lived in more
+            places than she cares to count. She is a stay-at-home mom of two spunky girls and is currently a student at BYU-Pathway
+            Worldwide, where she is studying Software Development. (Yes, she did design this website, and she's super excited about
+            it!) Her hobbies include (but are not limited to): crocheting, playing the piano, chainmaille jewelry making, and
+            bingeing all the stories. She also loves watching Chinese dramas and listening to K-Pop. Her ultimate favorite Chinese
+            drama is The Untamed. Her top three K-Pop groups (in no particular order) are Stray Kids, Alpha Drive One, and Ateez.</p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="profile picture">
+        </section>
+
+        <section class="course-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-container">
+                <button id="all-course" class="course" aria-label="all courses">ALL</button>
+                <button id="cse-course" class="course" aria-label="CSE courses">CSE</button>
+                <button id="wdd-course" class="course" aria-label="wdd courses">WDD</button>
+            </div>
+            <div class="container" id="container"></div>
+            <p>The total credits for courses listed above are <span id="credits"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/lucina.huff/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/cinamarie16" target="_blank"><img src="images/github.svg" alt="GitHub"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lucina-m-huff/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+        </div>
+
+        <p>&copy;<span id='currentyear'></span> 📔 Lucina M. Huff 📖 Utah</p>
+        <p id='lastModified'></p>
+    </footer>
+</body>
+
+</html>

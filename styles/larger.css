@@ -1,0 +1,41 @@
+@media screen and (min-width: 500px) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hdr-top {
+        display: flex;
+    }
+
+    nav ul li {
+        border: none;    
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+
+    h1, .course-section {
+        grid-column: span 2;
+    }
+
+    section, footer {
+        max-width: 90em;
+    }
+
+    .container, .course-container  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+}

@@ -1,0 +1,130 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: #f2f2e6;
+    margin: 10px;
+}
+
+header {
+    font-size: 1.25rem;
+}
+
+.hdr-top {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+}
+
+header img, #nav-button, .social img {
+    width: 48px;
+    height: 48px;
+}
+
+header span {
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+    align-content: center;
+}
+
+#nav-button {
+    font-weight: 700;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+.navigation {
+    display: none;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.complete {
+    background-color: #69BA57;
+}
+
+.not-complete {
+    background-color: #A857BA;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course {
+    background-color: #f2f2e6;
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card, .course {
+    border: 2px solid #A857BA;
+    border-radius: 5px;
+}
+
+.card {    
+    margin: 5px;
+    padding: 5px;
+}
+
+h2, nav {
+    background-color: #A857BA;
+}
+
+h2, h3, footer {
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+nav ul li {
+    border-bottom: 2px solid #A857BA;
+    text-decoration: none;
+    min-width: 300px;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;   
+    box-shadow: 2px 2px 7px #A857BA;
+}
+
+
+section, footer {
+    min-width: 300px;
+    max-width: 480px;
+    margin: 10px 0;
+}
+
+section p, section div, section button {
+    padding: 10px;
+}
+
+footer, section, #nav-button, .current {
+    background-color: #E5CCEA;
+}
