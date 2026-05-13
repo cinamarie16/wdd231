@@ -1,0 +1,45 @@
+* {
+    font-family: "Merriweather", serif;
+    color: #46185D;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    border-radius: 5px;
+    background-color: #E2C6F0;
+    box-shadow: 0 0 5px 15px #BD7DDE;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0.75rem;
+}
+
+section {
+    background-color: #BD7DDE;
+    border: 2px solid #46185D;
+}
+
+section h2, section p {
+    padding: .25rem;
+
+}
+section img {
+    box-shadow: 2px 2px 5px #46185D;
+    margin: 0.5rem;
+}
+
+
+header, footer, main {
+    margin: 0.75rem;
+    padding: 0.5rem;
+}
+
+footer {
+    border-top: 2px solid #46185D;
+}
