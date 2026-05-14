@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Orem Chamber of Commerce</title>
+    <meta name="description" content="A list of local businesses and other organizations that belong to our chamber of commerce.">
+    <meta name="author" content="Lucina M. Huff">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+    <meta property='og:title' content='Directory | Orem Chamber of Commerce'>
+    <meta property= 'og:description' content='A list of local businesses and other organizatons that belong to our chamber of commerce.'>
+    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/chamber-logo.webp'>
+    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/directory.html'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hdr-top">
+            <img src="images/chamber-logo.webp" alt="site logo" width="1" height="1">
+            <span>Orem Chamber of Commerce</span>
+        
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="https://cinamarie16.github.io/wdd231/chamber/directory.html"></a>Directory</li>
+                <li><a href="#"></a>Join</li>
+                <li><a href="#"></a>Discover</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article id="grid-view" class="grid-view">
+            <div id="cards"></div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div id="contact">
+            <h3>Orem Chamber of Commerce</h3>
+            <p>456 N State St</p>
+            <p>Orem UT 84057</p>
+            <p>info@oremcc.org</p>
+            <p>(801) 555-6736</p>
+        </div>
+        <div id="social">
+
+        </div>
+        <div id="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Lucina Huff</p>
+            <p>&copy;<span id='currentyear'></span> Orem Chamber of Commerce</p>
+            <p id='lastModified'></p>
+        </div>
+    </footer>
+</body>
+</html>

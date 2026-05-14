@@ -1,0 +1,88 @@
+{
+    "members" : [
+        {
+            "name" : "Persnickety Prints",
+            "address" : {
+                    "street" : "190 N Orem Blvd",
+                    "city" : "Orem, UT 84057"
+                },
+            "phone" : "(801) 555-7020",
+            "url" : "https://www.persnicketyprints.com/",
+            "image" : "images/persnickety-logo.webp",
+            "level" : 1,
+            "type" : "Digital printing service"
+        },
+        {
+            "name": "Doggy Dreams",
+            "address": {
+                "street": "785 W 400 N",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-0677",
+            "url": "https://doggydreamspetgrooming.com",
+            "image": "images/doggy-logo.webp",
+            "level": 2,
+            "type": "Dog groomers"
+        },
+        {
+            "name": "A to Z Building Blocks",
+            "address": {
+                "street": "670 W 400 N",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-6704",
+            "url": "https://atozbuildingblocks.com/",
+            "image": "images/atoz-logo.webp",
+            "level": 3,
+            "type": "Early childcare"
+        },
+        {
+            "name": "Called2Serve",
+            "address": {
+                "street": "424 W 800 N",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-7828",
+            "url": "https://called2serve.com/",
+            "image": "images/called-logo.webp",
+            "level": 1,
+            "type": "Delivery service"
+        },
+        {
+            "name": "Bookkhipu",
+            "address": {
+                "street": "165 W 400 N",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-1350",
+            "url": "https://bookkhipu.com/",
+            "image": "images/book-logo.webp",
+            "level": 2,
+            "type": "Accountant"
+        },
+        {
+            "name": "Stylish Engraving",
+            "address": {
+                "street": "499 Beverly Ave",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-9187",
+            "url": "https://stylishengraving.com/",
+            "image": "images/stylish-logo.webp",
+            "level": 3,
+            "type": "Engraver"
+        },
+        {
+            "name": "Advice Marketing",
+            "address": {
+                "street": "172 N 450 W",
+                "city": "Orem, UT 84057"
+                },
+            "phone": "(801) 555-4116",
+            "url": "https://advicemarketing.us/",
+            "image": "images/advice-logo.webp",
+            "level": 2,
+            "type": "Marketing agency"
+        }
+    ]
+}

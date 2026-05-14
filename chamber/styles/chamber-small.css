@@ -1,0 +1,85 @@
+:root {
+    --heading-font: "Agbalumo", system-ui;
+    --body-font: "Overlock", sans-serif;
+    --background-color: #E7EEFE;
+    --font-color: #0B51F4;
+    --accent-color1: #F4AE0B;
+    --accent-color2: #031744;
+    --border-style: 2px solid #031744;
+    --box-shadow: 0 0 1rem #0B51F4;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+.navigation {
+    display: none;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--background-color);
+    text-align: center;
+
+    button {
+        padding: 0.5rem;
+        font-weight: 700;
+    }
+}
+
+/* #grid-view {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+} */
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+
+    section {
+        text-align: center;
+        & > * {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: var(--border-style);
+        box-shadow: var(--box-shadow);
+    }
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+        padding: 0.25rem;
+
+        & > * {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}

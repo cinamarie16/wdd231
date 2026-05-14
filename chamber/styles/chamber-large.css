@@ -1,0 +1,17 @@
+@media screen and (min-width: 500px) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hdr-top {
+        display: flex;
+    }
+}
