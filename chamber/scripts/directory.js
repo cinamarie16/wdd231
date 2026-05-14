@@ -28,6 +28,7 @@ const displayMembers = (members) => {
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '300');
         image.setAttribute('height', '300');
+        url.setAttribute('class', 'url')
 
         card.appendChild(name);
         card.appendChild(image);

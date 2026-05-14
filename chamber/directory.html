@@ -17,6 +17,7 @@
 
     <meta property='og:title' content='Directory | Orem Chamber of Commerce'>
     <meta property= 'og:description' content='A list of local businesses and other organizatons that belong to our chamber of commerce.'>
+    <!-- fix image. size 600x315 ratio 2:1. will need a different image than the chamber logo -->
     <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/chamber-logo.webp'>
     <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/directory.html'>
     
@@ -36,13 +37,12 @@
         </div>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="current"><a href="https://cinamarie16.github.io/wdd231/chamber/directory.html"></a>Directory</li>
-                <li><a href="#"></a>Join</li>
-                <li><a href="#"></a>Discover</li>
+                <li><a href="#" aria-label="home">Home</a></li>
+                <li class="current"><a href="https://cinamarie16.github.io/wdd231/chamber/directory.html" aria-label="directory"></a>Directory</li>
+                <li><a href="#" aria-label="join"></a>Join</li>
+                <li><a href="#" aria-label="discover"></a>Discover</li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -53,9 +53,7 @@
         </div>
         <article id="grid-view" class="grid-view">
             <div id="cards"></div>
-
         </article>
-
     </main>
 
     <footer>
@@ -66,7 +64,14 @@
             <p>info@oremcc.org</p>
             <p>(801) 555-6736</p>
         </div>
+        
         <div id="social">
+            <a href="#" target="_blank" aria-label="facebook"><img src="images/facebook.svg" alt="Facebook" width="16"
+                    height="16"></a>
+            <a href="#" target="_blank" aria-label="github"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+            <a href="#" target="_blank" aria-label="linkedin"><img src="images/linkedin.svg" alt="LinkedIn"
+                    width="16" height="16"></a>
 
         </div>
         <div id="copyright">
