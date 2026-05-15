@@ -12,7 +12,7 @@ getMemberData();
 const displayMembers = (members) => {
     members.forEach((member) => {
         const card = document.createElement('section');
-        const name = document.createElement('h2');
+        const name = document.createElement('h3');
         const image = document.createElement('img');
         const address = document.createElement('p');
         const phone = document.createElement('p');
