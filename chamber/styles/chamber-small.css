@@ -131,7 +131,7 @@ h1 {
     box-shadow: var(--box-shadow);
     margin: 10px;
 }
-.grid-view section & > * {
+.grid-view section > * {
     margin: 0.1rem;
 }
 .grid-view section h3 {
@@ -155,7 +155,7 @@ h1 {
     margin: 0;
     padding: 0.5rem;
 }
-.list-view section & > * {
+.list-view section > * {
     margin: 0 1rem;
 }
 .list-view section h3 {
@@ -165,7 +165,7 @@ h1 {
 .list-view section img {
     display: none;
 }
-.list-view section &:nth-child(odd) {
+.list-view section:nth-child(odd) {
     background-color: var(--accent-color1);
 }
 
