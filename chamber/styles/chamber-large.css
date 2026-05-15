@@ -38,7 +38,7 @@
         margin: 0;
         padding: 0.25rem;
     }
-    .list-view section &>* {
+    .list-view section>* {
         margin: 0 1rem;
     }
     .list-view section h3 {
@@ -47,7 +47,7 @@
     .list-view section img {
         display: none;
     }
-    .list-view section &:nth-child(odd) {
+    .list-view section:nth-child(odd) {
         background-color: var(--accent-color1);
     }
 
