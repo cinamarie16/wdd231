@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Orem Chamber of Commerce</title>
-    <meta name="description" content="A list of local businesses and other organizations that belong to our chamber of commerce.">
+    <title>Home | Orem Chamber of Commerce</title>
+    <meta name="description" content="The homepage for the Orem Chamber of Commerce with community information, weather, calls to action, and business spotlights.">
     <meta name="author" content="Lucina M. Huff">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -13,13 +13,15 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
-    <meta property='og:title' content='Directory | Orem Chamber of Commerce'>
-    <meta property='og:description' content='A list of local businesses and other organizatons that belong to our chamber of commerce.'>
+
+    <meta property='og:title' content='Home | Orem Chamber of Commerce'>
+    <meta property='og:description' content='The homepage for the Orem Chamber of Commerce with community information, weather, calls to action, and business spotlights.'>
     <!-- fix image. size 600x315 ratio 2:1. will need a different image than the chamber logo -->
     <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/chamber-logo.webp'>
-    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/directory.html'>
+    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/index.html'>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +39,8 @@
         </div>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html" aria-label="home">Home</a></li>
-                <li class="current"><a href="directory.html" aria-label="directory">Directory</a></li>
+                <li class="current"><a href="index.html" aria-label="home">Home</a></li>
+                <li><a href="directory.html" aria-label="directory">Directory</a></li>
                 <li><a href="#" aria-label="join">Join</a></li>
                 <li><a href="#" aria-label="discover">Discover</a></li>
             </ul>
@@ -46,13 +48,36 @@
     </header>
 
     <main>
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-with: 500px)">
+                <img src="images/hero-small.webp" alt="Utah Valley Mountains and Cities" class="hero-img" width="300" height="75" loading="lazy">
+            </picture>
+            <button id="join">Join Now</button>
         </div>
-        <div id="grid-view" class="grid-view">
-            <div id="cards"></div>
+
+        <h1>Home</h1>
+        <div>
+            <h2>Events</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque, sequi hic illo porro consequuntur odit odio, dolorum est dolore facilis dolores eos nemo omnis facere eius assumenda itaque beatae.</p>
+        </div>
+        <div>
+            <h2>Current Weather</h2>
+            <span id="current-temp"></span>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <h2>Weather Forecast</h2>
+            <p id="today"></p>
+            <p id="tomorrow"></p>
+            <p id="next-day"></p>
+        </div>
+        <div id="spotlight">
+
         </div>
     </main>
 

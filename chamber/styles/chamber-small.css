@@ -10,7 +10,7 @@
 }
 
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--body-font);
@@ -58,6 +58,9 @@ header span {
     font-weight: 700;
     background-color: var(--background-color);
     font-size: 1.75rem;
+    position: fixed;
+    top: 0.75em;
+    right: 0.75em;
 }
 
 .hamburger::before {
@@ -92,6 +95,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: var(--background-color);
+}
+
 .current {
     background-color: var(--background-color);
     font-weight: 700;
@@ -106,6 +113,26 @@ h1 {
     font-size: 2.8rem;
     padding: 0.5rem;
     margin: auto;    
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#join {
+    position: absolute;
+    top: 73%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
 }
 
 .menu {
