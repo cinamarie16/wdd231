@@ -51,8 +51,29 @@
         background-color: var(--accent-color1);
     }
 
+.button-link {
+    top: 73%;
+    right: 5%;
+    padding: 10px;
+    font-size: 2rem;
+}
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 680px) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .button-link {
+        top: 59%;
+        right: 1%;
+        font-size: 1.25rem;
     }
 }

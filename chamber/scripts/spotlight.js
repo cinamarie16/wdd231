@@ -5,14 +5,17 @@ async function getSpotlightData() {
     const response = await fetch(members);
     const data = await response.json();
 
-    console.log(data);
+    let randomMember;
 
-    const randomIndex = Math.floor(Math.random() * data.members.length);
-    const randomMember = data.members[randomIndex];
-
-    if (randomMember.level === 2 || 3) {
-        displaySpotlight(randomMember);
+    while (true) {
+        const randomIndex = Math.floor(Math.random() * data.members.length);
+        randomMember = data.members[randomIndex];
+        if (randomMember.level !== 1) {
+            break;
+        }
     }
+
+    displaySpotlight(randomMember);
 }
 
 getSpotlightData();
@@ -43,7 +46,7 @@ const displaySpotlight = (member) => {
     image.setAttribute('loading', 'lazy');
     image.setAttribute('width', '300');
     image.setAttribute('height', '300');
-    url.setAttribute('class', 'url')
+    level.setAttribute('class', 'level')
     
     card.appendChild(name);
     card.appendChild(image);

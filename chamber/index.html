@@ -54,31 +54,34 @@
                 <source srcset="images/hero-medium.webp" media="(min-with: 500px)">
                 <img src="images/hero-small.webp" alt="Utah Valley Mountains and Cities" class="hero-img" width="300" height="75" loading="lazy">
             </picture>
-            <button id="join">Join Now</button>
+            <a href="#" class="button-link" aria-label="join today">Join Today!</a>
         </div>
 
         <h1>Home</h1>
-        <div>
+        <div class="home-divs">
             <h2>Events</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque, sequi hic illo porro consequuntur odit odio, dolorum est dolore facilis dolores eos nemo omnis facere eius assumenda itaque beatae.</p>
         </div>
-        <div>
+        <div class="home-divs">
             <h2>Current Weather</h2>
-            <span id="current-temp"></span>
-            <figure>
+            <div id="current-weather">
                 <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
+                <div id="weather-details">
+                    <p id="current-temp"></p>
+                    <p id="description"></p>
+                    <p id="high"></p>
+                    <p id="low"></p>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="home-divs" id="forecast">
             <h2>Weather Forecast</h2>
             <p id="today"></p>
             <p id="tomorrow"></p>
             <p id="next-day"></p>
         </div>
-        <div id="spotlight">
 
-        </div>
+        <div id="spotlight"></div>
     </main>
 
     <footer>

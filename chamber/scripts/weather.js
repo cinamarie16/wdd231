@@ -1,6 +1,8 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const description = document.querySelector('#description');
+const high = document.querySelector('#high');
+const low = document.querySelector('#low');
 
 const today = document.querySelector('#today');
 const tomorrow = document.querySelector('#tomorrow');
@@ -20,6 +22,7 @@ async function apiFetchCurrent(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -34,14 +37,7 @@ async function apiFetchForecast(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
             getThreeDayForecast(data);
-            // console.log(threeDay);
-            
-            // const temps = threeDay
-            // displayForecast(threeDay);
-            
-            // displayForecast(threeDay);
         } else {
             throw Error(await response.text());
         }
@@ -55,12 +51,14 @@ apiFetchCurrent(currentUrl);
 apiFetchForecast(forecastUrl);
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    description.textContent = `${desc}`;
+    high.innerHTML = `High: ${Math.round(data.main.temp_max)}&deg;F`;
+    low.innerHTML = `Low: ${Math.round(data.main.temp_min)}&deg;F`;
 }
 
 function getThreeDayForecast(data) {
@@ -80,8 +78,6 @@ function getThreeDayForecast(data) {
     });
     
     const threeDayForecast = dailyForecasts.slice(0, 3);
-    // console.log(threeDayForecast);
-
     displayForecast(threeDayForecast);
 }
 
@@ -108,7 +104,7 @@ function displayForecast(data) {
     const tomorrowTemp = getTomorrowForecast(data);
     const nextTemp = getNextDayForecast(data);
 
-    today.innerHTML = `Today: ${todayTemp}&deg;F`;
-    tomorrow.innerHTML = `Tomorrow: ${tomorrowTemp}&deg;F`;
-    nextDay.innerHTML = `Next Day: ${nextTemp}&deg;F`
+    today.innerHTML = `Today: ${Math.round(todayTemp)}&deg;F`;
+    tomorrow.innerHTML = `Tomorrow: ${Math.round(tomorrowTemp)}&deg;F`;
+    nextDay.innerHTML = `Next Day: ${Math.round(nextTemp)}&deg;F`
 }
