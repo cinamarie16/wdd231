@@ -129,7 +129,6 @@ h1 {
 
 .button-link {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--background-color);
     text-decoration: none;
     position: absolute;
@@ -138,7 +137,6 @@ h1 {
     padding: 5px;
     font-weight: 600;
 }
-
 
 .menu {
     margin: auto;

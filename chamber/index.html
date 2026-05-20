@@ -19,8 +19,7 @@
 
     <meta property='og:title' content='Home | Orem Chamber of Commerce'>
     <meta property='og:description' content='The homepage for the Orem Chamber of Commerce with community information, weather, calls to action, and business spotlights.'>
-    <!-- fix image. size 600x315 ratio 2:1. will need a different image than the chamber logo -->
-    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/chamber-logo.webp'>
+    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/social-meta.webp'>
     <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/index.html'>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,27 +57,29 @@
         </div>
 
         <h1>Home</h1>
-        <div class="home-divs">
-            <h2>Events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque, sequi hic illo porro consequuntur odit odio, dolorum est dolore facilis dolores eos nemo omnis facere eius assumenda itaque beatae.</p>
-        </div>
-        <div class="home-divs">
-            <h2>Current Weather</h2>
-            <div id="current-weather">
-                <img id="weather-icon" src="" alt="">
-                <div id="weather-details">
-                    <p id="current-temp"></p>
-                    <p id="description"></p>
-                    <p id="high"></p>
-                    <p id="low"></p>
+        <div class="main">
+            <div class="home-divs" id="events">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque, sequi hic illo porro consequuntur odit odio, dolorum est dolore facilis dolores eos nemo omnis facere eius assumenda itaque beatae.</p>
+            </div>
+            <div class="home-divs">
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    <img id="weather-icon">
+                    <div id="weather-details">
+                        <p id="current-temp"></p>
+                        <p id="description"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="home-divs" id="forecast">
-            <h2>Weather Forecast</h2>
-            <p id="today"></p>
-            <p id="tomorrow"></p>
-            <p id="next-day"></p>
+            <div class="home-divs" id="forecast">
+                <h2>Weather Forecast</h2>
+                <p id="today"></p>
+                <p id="tomorrow"></p>
+                <p id="next-day"></p>
+            </div>
         </div>
 
         <div id="spotlight"></div>
