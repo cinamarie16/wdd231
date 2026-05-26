@@ -114,7 +114,25 @@ section img {
     box-shadow: 2px 2px 7px #A857BA;
 }
 
+#course-details {
+    padding: 10px;
+    width: 75%;
+    max-width: 500px;
+    border: 2px solid #A857BA;
+    box-shadow: 2px 2px 7px #A857BA;
+}
 
+::backdrop {
+    background-color: #000000B3;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 2px solid #A857BA;
+}
 section, footer {
     min-width: 300px;
     max-width: 480px;
@@ -125,6 +143,6 @@ section p, section div, section button {
     padding: 10px;
 }
 
-footer, section, #nav-button, .current {
+footer, section, #nav-button, .current, #course-details {
     background-color: #E5CCEA;
 }

@@ -78,6 +78,9 @@ const courses = [
     }
 ]
 
+const courseDetails = document.querySelector('#course-details');
+const container = document.getElementById('container');
+
 function createCourseCard(course) {
     return `
     <div class="card ${course.completed === true ? 'complete' : 'not-complete'}">
@@ -86,24 +89,33 @@ function createCourseCard(course) {
     `;
 }
 
+function renderCourses(courses) {
+    container.innerHTML = courses.map(createCourseCard).join("");
+    
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            displayCourseDetails(courses[index]);
+        });
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const courseCard = document.getElementById("container");
-    courseCard.innerHTML = courses.map(createCourseCard).join("");
+    renderCourses(courses);
 });
 
 const allCourses = document.querySelector("#all-course");
 allCourses.addEventListener("click", () => {
-    const courseCard = document.getElementById("container");
-    courseCard.innerHTML = courses.map(createCourseCard).join("");
+    renderCourses(courses)
     const credit = courses.reduce((acc, course) => acc + course.credits, 0)
-    document.getElementById('credits').innerHTML = `${credit}`;    
+    document.getElementById('credits').innerHTML = `${credit}`;
 });
 
 const cseCourse = document.querySelector("#cse-course");
-cseCourse.addEventListener("click", () => {
+    cseCourse.addEventListener("click", () => {
     let cseCourses = courses.filter(course => course.subject === 'CSE');
-    const courseCard = document.getElementById("container");
-    courseCard.innerHTML = cseCourses.map(createCourseCard).join("");
+    renderCourses(cseCourses)
     const credit = cseCourses.reduce((acc, course) => acc + course.credits, 0)
     document.getElementById('credits').innerHTML = `${credit}`;    
 });
@@ -111,8 +123,7 @@ cseCourse.addEventListener("click", () => {
 const wddCourse = document.querySelector("#wdd-course");
 wddCourse.addEventListener("click", () => {
     let wddCourses = courses.filter(course => course.subject === 'WDD');
-    const courseCard = document.getElementById("container");
-    courseCard.innerHTML = wddCourses.map(createCourseCard).join("");
+    renderCourses(wddCourses)
     const credit = wddCourses.reduce((acc, course) => acc + course.credits, 0)
     document.getElementById('credits').innerHTML = `${credit}`;
 });
@@ -120,3 +131,21 @@ wddCourse.addEventListener("click", () => {
 
 const credit = courses.reduce((acc, course) => acc + course.credits, 0)
 document.getElementById('credits').innerHTML = `${credit}`;    
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="close-modal">✖️</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>`;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#close-modal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
