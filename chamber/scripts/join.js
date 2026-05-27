@@ -18,6 +18,9 @@ closeButton.addEventListener('click', () => {
 function displayItems(data) {
     data.forEach(x => {
         // console.log(x)
+        const levelCard = document.createElement('div');
+        levelCard.id = 'level-card';
+
         const levelTitle = document.createElement('h2');
         levelTitle.innerHTML = `${x.level} Membership Level`;
         
@@ -25,8 +28,10 @@ function displayItems(data) {
         openButton.textContent = 'Learn More';
 
         openButton.addEventListener('click', () => showStuff(x));
-        levelBox.appendChild(levelTitle);
-        levelBox.appendChild(openButton);
+
+        levelCard.appendChild(levelTitle);
+        levelCard.appendChild(openButton);
+        levelBox.appendChild(levelCard);
     });
 }
 

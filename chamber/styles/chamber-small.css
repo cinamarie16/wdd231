@@ -7,6 +7,7 @@
     --accent-color2: #031744;
     --border-style: 2px solid #031744;
     --box-shadow: 0 0 1rem #073297;
+    --backdrop: #03174490;
 }
 
 *{
@@ -61,6 +62,7 @@ header span {
     position: fixed;
     top: 0.75em;
     right: 0.75em;
+    border: var(--border-style);
 }
 
 .hamburger::before {
@@ -228,6 +230,109 @@ h1 {
 
 #forecast p {
     text-align: center;
+}
+
+form {
+    margin: 1rem 2%;
+
+    label {
+        display: block;
+        padding-top: .5rem;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: var(--border-style);
+        border-left-width: 5px;
+        border-left-color: var(--accent-color2);
+        font-size: 1rem;
+        width: 250px;
+    }
+
+    input:required {
+        border-left-color: var(--accent-color1);
+    }
+
+    input:focus {
+        border-left-color: var(--accent-color2);
+        outline: none;
+    }
+
+    input:required:valid {
+        border-left-color: green;
+    }
+
+    input[type=submit] {
+        border: var(--border-style);
+        text-align: center;
+        background-color: var(--accent-color1);
+        box-shadow: var(--box-shadow);
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--font-color);
+}
+
+#results {
+    background-color: var(--accent-color1);
+    padding: 1rem;
+    border: var(--border-style);
+    text-align: center;
+}
+
+#thanks {
+    text-align: center;
+}
+
+#level-card {
+    border: var(--border-style);
+    margin: 1rem 2%;
+    padding: 10px;
+}
+
+#level-card button {
+    margin-top: .5rem;
+    padding: 10px;
+    font-weight: 600;
+    background-color: var(--accent-color1);
+    border: var(--border-style);
+}
+
+#membership-levels {
+    background-color: var(--background-color);
+    padding: .5rem;
+    margin: 1rem;
+
+    button {
+        background-color: var(--accent-color1);
+        padding: .3rem;
+        border: var(--border-style);
+    }
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+::backdrop {
+    background-color: var(--backdrop);
 }
 
 footer {
