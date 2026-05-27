@@ -260,6 +260,13 @@ select {
     width: 250px;
 }
 
+textarea {
+    width: 90%;
+    height: 100px;
+    min-height: 50px;
+    padding: 3px;
+}
+
 input:required {
     border-left-color: var(--accent-color1);
 }
@@ -284,6 +291,7 @@ input[type=submit] {
     font-weight: 600;
     -webkit-appearance: none;
     appearance: none;
+    cursor: pointer;
 }
 
 input:-webkit-autofill {
@@ -305,6 +313,17 @@ input:-webkit-autofill {
     border: var(--border-style);
     margin: 1rem 2%;
     padding: 10px;
+    animation: cardEntrance 1s ease-out 0.1s backwards;
+}
+
+#level-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+#level-card:nth-child(3) {
+    animation-delay: 1s;
+}
+#level-card:nth-child(4) {
+    animation-delay: 1.5s;
 }
 
 #level-card button {
@@ -313,6 +332,20 @@ input:-webkit-autofill {
     font-weight: 600;
     background-color: var(--accent-color1);
     border: var(--border-style);
+}
+
+@keyframes cardEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #membership-levels {

@@ -46,39 +46,47 @@
 
     <main>
         <h1>Join</h1>
-        <form method="GET" action="thankyou.html" class="join">
-            <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
-            <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name" ></label>
-            <label>Organizational Title <input type="text" name="org-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
-            <label>Email <input type="email" required name="email" title="Your Email" autocomplete="email" placeholder="example@gmail.com"></label>
-            <label>Cell Phone <input type="tel" required name="phone" title="Your cell phone number" autocomplete="tel"></label>
-            <label>Business/Organization Name <input type="text" required name="biz-name" title="Business or Organization Name" autocomplete="organization"></label>
-        
-        
-            <h2>Select Membership Level</h2>
-            <label><input type="radio" name="membership" value="np"> Non-Profit Membership</label>
-            <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
-        
-            <h2>Business/Organization</h2>
-            <label>Description <textarea title="Description of you business or organization" name="biz-desc"></textarea></label>
-            
-            <input type="hidden" id="timestamp" name="timestamp" value="">
-        
-            <input type="submit" value="Apply for Membership">
-        </form>
-
-        <div id="membership"></div>
-        <dialog id="membership-levels">
-            <div>
-                <h3></h3>
-                <p></p>
-                <button>Close</button>
+        <div id="join">
+            <div id="form">
+                <h2>Membership Application</h2>
+                <form method="GET" action="thankyou.html" class="join">
+                    <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
+                    <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name" ></label>
+                    <label>Organizational Title <input type="text" name="org-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label>Email <input type="email" required name="email" title="Your Email" autocomplete="email" placeholder="example@gmail.com"></label>
+                    <label>Cell Phone <input type="tel" required name="phone" title="Your cell phone number" autocomplete="tel"></label>
+                    <label>Business/Organization Name <input type="text" required name="biz-name" title="Business or Organization Name" autocomplete="organization"></label>
+                
+                
+                    <h2>Select Membership Level</h2>
+                    <label><input type="radio" name="membership" value="np"> Non-Profit Membership</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                
+                    <h2>Business/Organization</h2>
+                    <label>Description <textarea title="Description of you business or organization" name="biz-desc"></textarea></label>
+                    
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                    <input type="submit" value="Apply for Membership">
+                </form>
             </div>
-            <p></p>
-        </dialog>
 
+            <div id="levels">
+                <h2>Membership Levels</h2>
+                <div id="membership"></div>
+                <dialog id="membership-levels">
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                        <button>Close</button>
+                    </div>
+                    <p></p>
+                </dialog>
+            </div>
+    
+        </div>
     </main>
 
     <footer>

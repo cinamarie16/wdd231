@@ -1,3 +1,15 @@
+:root {
+    --heading-font: "Agbalumo", system-ui;
+    --body-font: "Overlock", sans-serif;
+    --background-color: #E7EEFE;
+    --font-color: #073297;
+    --accent-color1: #F8CB63;
+    --accent-color2: #031744;
+    --border-style: 2px solid #031744;
+    --box-shadow: 0 0 1rem #073297;
+    --backdrop: #03174490;
+}
+
 @media screen and (min-width: 500px) {
     header {
         display: grid;
@@ -76,6 +88,16 @@
         font-size: 1.5rem;
     }
 
+    #join {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #form {
+        padding-right: 2rem;
+        border-right: var(--border-style);
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -97,5 +119,9 @@
 
     .home-divs p {
         font-size: 1rem;
+    }
+
+    #form {
+        border-right: none;
     }
 }
