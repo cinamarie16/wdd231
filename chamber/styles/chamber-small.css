@@ -234,56 +234,56 @@ h1 {
 
 form {
     margin: 1rem 2%;
+}
 
-    label {
-        display: block;
-        padding-top: .5rem;
-    }
+label {
+    display: block;
+    padding-top: .5rem;
+}
 
-    h2 {
-        margin-top: 2rem;
-    }
+form h2 {
+    margin-top: 2rem;
+}
 
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border: var(--border-style);
-        border-left-width: 5px;
-        border-left-color: var(--accent-color2);
-        font-size: 1rem;
-        width: 250px;
-    }
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: var(--border-style);
+    border-left-width: 5px;
+    border-left-color: var(--accent-color2);
+    font-size: 1rem;
+    width: 250px;
+}
 
-    input:required {
-        border-left-color: var(--accent-color1);
-    }
+input:required {
+    border-left-color: var(--accent-color1);
+}
 
-    input:focus {
-        border-left-color: var(--accent-color2);
-        outline: none;
-    }
+input:focus {
+    border-left-color: var(--accent-color2);
+    outline: none;
+}
 
-    input:required:valid {
-        border-left-color: green;
-    }
+input:required:valid {
+    border-left-color: #008000;
+}
 
-    input[type=submit] {
-        border: var(--border-style);
-        text-align: center;
-        background-color: var(--accent-color1);
-        box-shadow: var(--box-shadow);
-        padding: .75rem 1.5rem;
-        margin: 2rem 0;
-        font-size: 1.2rem;
-        font-weight: 600;
-        -webkit-appearance: none;
-        appearance: none;
-    }
+input[type=submit] {
+    border: var(--border-style);
+    text-align: center;
+    background-color: var(--accent-color1);
+    box-shadow: var(--box-shadow);
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 input:-webkit-autofill {
@@ -319,16 +319,16 @@ input:-webkit-autofill {
     background-color: var(--background-color);
     padding: .5rem;
     margin: 1rem;
+}
 
-    button {
-        background-color: var(--accent-color1);
-        padding: .3rem;
-        border: var(--border-style);
-    }
+#membership-levels button {
+    background-color: var(--accent-color1);
+    padding: .3rem;
+    border: var(--border-style);
+}
 
-    p {
-        margin: 10px 0;
-    }
+#membership-levels p {
+    margin: 10px 0;
 }
 
 ::backdrop {
