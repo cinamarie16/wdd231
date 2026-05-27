@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Orem Chamber of Commerce</title>
+    <meta name="description" content="Information about the benefits of joining the chamber and a membership application form. There are three membership level options: non-profit, silver, and gold. Each level has different perks including directory listings, social media work, luncheons, sponsorships, advertising, etc.">
+    <meta name="author" content="Lucina M. Huff">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" type="module"></script>
+
+    <meta property='og:title' content='Join | Orem Chamber of Commerce'>
+    <meta property='og:description' content='Information about the benefits of joining the chamber and a membership application form. There are three membership level options: non-profit, silver, and gold. Each level has different perks including directory listings, social media work, luncheons, sponsorships, advertising, etc.'>
+    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/chamber/images/social-meta.webp'>
+    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/chamber/join.html'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hdr-top">
+            <img src="images/chamber-logo.webp" alt="site logo" width="1" height="1">
+            <span>Orem Chamber of Commerce</span>
+        
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html" aria-label="home">Home</a></li>
+                <li><a href="directory.html" aria-label="directory">Directory</a></li>
+                <li class="current"><a href="join.html" aria-label="join">Join</a></li>
+                <li><a href="#" aria-label="discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join</h1>
+        <form method="GET" action="thankyou.html" class="join">
+            <label>First Name <input type="text" required name="first" title="Your First Name" autocomplete="given-name"></label>
+            <label>Last Name <input type="text" required name="last" title="Your Last Name" autocomplete="family-name" ></label>
+            <label>Organizational Title <input type="text" name="org-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+            <label>Email <input type="email" required name="email" title="Your Email" autocomplete="email" placeholder="example@gmail.com"></label>
+            <label>Cell Phone <input type="tel" required name="phone" title="Your cell phone number" autocomplete="tel"></label>
+            <label>Business/Organization Name <input type="text" required name="biz-name" title="Business or Organization Name" autocomplete="organization"></label>
+        
+        
+            <h3>Select Membership Level</h3>
+            <label><input type="radio" name="membership" value="np"> Non-Profit Membership</label>
+            <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+        
+        
+            <h3>Business/Organization</h3>
+            <label>Description <input type="textarea" title="Description of you business or organization" name="biz-desc"></label>
+            
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+        
+            <input type="submit" value="Apply for Membership">
+        </form>
+
+        <div id="membership"></div>
+        <dialog id="membership-levels">
+            <div>
+                <h3></h3>
+                <p></p>
+                <button>Close</button>
+            </div>
+            <p></p>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div id="contact">
+            <h2>Orem Chamber of Commerce</h2>
+            <p>456 N State St</p>
+            <p>Orem UT 84057</p>
+            <p>info@oremcc.org</p>
+            <p>(801) 555-6736</p>
+        </div>
+        
+        <div id="social">
+            <a href="#" target="_blank" aria-label="facebook"><img src="images/facebook.svg" alt="Facebook" width="16"
+                    height="16"></a>
+            <a href="#" target="_blank" aria-label="github"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+            <a href="#" target="_blank" aria-label="linkedin"><img src="images/linkedin.svg" alt="LinkedIn"
+                    width="16" height="16"></a>
+
+        </div>
+        <div id="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Lucina Huff</p>
+            <p>&copy;<span id='currentyear'></span> Orem Chamber of Commerce</p>
+            <p id='lastModified'></p>
+        </div>
+    </footer>
+</body>
+</html>
