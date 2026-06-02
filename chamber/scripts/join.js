@@ -1,4 +1,4 @@
-import { memberships } from "../data/membership.js";
+import { memberships } from "../data/membership.mjs";
 
 const timestamp = document.querySelector('#timestamp');
 timestamp.value = new Date().toLocaleString();
