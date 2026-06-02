@@ -15,7 +15,7 @@ export const interests = [
             "street": "300 E Center St",
             "city": "Orem, UT 84057"
         },
-        "description": "The All-Together Playground is a space that provides inclusive play opportunities for children of all ages and abilities. (No admission cost for park)"
+        "description": "The All-Together Playground is a space that provides inclusive play opportunities for children of all ages and abilities. Including: swings, slides, zip-lines, merry-go-round, a fort, a train, climbing bars, and much more!"
     },
     {
         "img": "images/roots-of-knowledge.webp",
@@ -24,7 +24,7 @@ export const interests = [
             "street": "800 W University Pkwy",
             "city": "Orem, UT 84058"
         },
-        "description": "Roots of Knowledge is a stained-glass art installation that presents a panorama of history and human drama. Roots of Knowledge is 10 feet high and 154 feet in length and features 40,000+ glass pieces. The intricate details incorporated into every window represent years of painstaking research on the events and people that shaped humankind, from the days of wooly mammoths and cavemen to the iPhone. Roots of Knowledge is the work of Holdman Studios and is housed in Utah Valley University's Fulton Library, Bingham Gallery. Please visit our website for parking information, to book a docent-led group tour, or to access a self-guided audio tour."
+        "description": "Roots of Knowledge is a stained-glass art installation that presents a panorama of history and human drama, featuring 40,000+ glass pieces. The intricate details in every window represent years of research on the events and people that shaped humankind."
     },
     {
         "img": "images/nielsens.webp",
@@ -42,16 +42,7 @@ export const interests = [
             "street": "1340 Sandhill Rd",
             "city": "Orem, UT 84058"
         },
-        "description": "Welcome to Hangtime Adventure Park, the premier family entertainment destination in the Utah County. Dive into endless fun with our wall-to-wall attractions in a clean, safe environment built for every aged ninja. Our park is equipped with safety pads and offers a variety of activities including dodgeball, basketball hoops, and trampolines. Bring your friends or family and bounce your way to an unforgettable day!"
-    },
-    {
-        "img": "images/scera.webp",
-        "name": "SCERA Center for the Arts",
-        "address": {
-            "street": "745 S State St",
-            "city": "Orem, UT 84058"
-        },
-        "description": "Founded in 1933, this historic venue offers movies, live theatre, concerts, special events and arts education classes for all ages."
+        "description": "Dive into endless fun with our wall-to-wall attractions built for every aged ninja. Equipped with safety pads and a variety of activities including dodgeball, basketball hoops, and trampolines. Bring your friends or family and bounce your way to an unforgettable day!"
     },
     {
         "img": "images/escapes-time.webp",
@@ -61,6 +52,15 @@ export const interests = [
             "city": "Orem, UT 84097"
         },
         "description": "Escapes in Time is a live escape room adventure located in Orem, Utah County, UT. Come experience Utah's only real time machine! Travel back in time to escape the Baker Street Mystery, Leonardo's Loot, and more."
+    },
+    {
+        "img": "images/scera.webp",
+        "name": "SCERA Center for the Arts",
+        "address": {
+            "street": "745 S State St",
+            "city": "Orem, UT 84058"
+        },
+        "description": "Founded in 1933, this historic venue offers movies, live theatre, concerts, special events and arts education classes for all ages."
     },
     {
         "img": "images/orem-rec.webp",

@@ -157,7 +157,7 @@ h1 {
     grid-gap: 5px;
     align-items: center;
 }
-.grid-view section, #spotlight section {
+.grid-view section, #spotlight section, #place-card {
     text-align: center;
     border: var(--border-style);
     box-shadow: var(--box-shadow);
@@ -166,7 +166,7 @@ h1 {
 .grid-view section > *, #spotlight section > * {
     margin: 0.1rem;
 }
-.grid-view section h3, #spotlight section h3 {
+.grid-view section h3, #spotlight section h3, #place-card h2 {
     padding: 10px;
 }
 .grid-view section img, #spotlight section img {
@@ -177,6 +177,45 @@ h1 {
 }
 .grid-view section .url, #spotlight section .level {
     padding-bottom: 10px;
+}
+
+#place-card {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "img"
+    "desc"
+    "address"
+    "button";
+}
+
+#place-card h2 {
+    grid-area: name;
+}
+
+#place-card img {
+    grid-area: img;
+    width: 90%;
+    height: auto;
+}
+
+#place-card p {
+    grid-area: desc;
+    padding: 10px;
+}
+
+#place-card address {
+    grid-area: address;
+    /* padding-bottom: 10px; */
+}
+
+#place-card button {
+    grid-area: button;
+    width: 90%;
+    justify-self: center;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .list-view {
@@ -305,8 +344,13 @@ input:-webkit-autofill {
     text-align: center;
 }
 
-#thanks {
+#thanks, #visit-days {
     text-align: center;
+}
+
+#visit-days {
+    background-color: var(--accent-color1);
+    box-shadow: var(--box-shadow);
 }
 
 #level-card {
@@ -326,12 +370,13 @@ input:-webkit-autofill {
     animation-delay: 1.5s;
 }
 
-#level-card button {
+#level-card button, #place-card button {
     margin-top: .5rem;
     padding: 10px;
     font-weight: 600;
     background-color: var(--accent-color1);
     border: var(--border-style);
+    cursor: pointer;
 }
 
 @keyframes cardEntrance {
@@ -358,6 +403,7 @@ input:-webkit-autofill {
     background-color: var(--accent-color1);
     padding: .3rem;
     border: var(--border-style);
+    cursor: pointer;
 }
 
 #membership-levels p {

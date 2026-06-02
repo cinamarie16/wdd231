@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 64rem) {
     header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -87,30 +87,13 @@
         border-right: var(--border-style);
     }
 
+    #interest-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-@media screen and (min-width: 500px) and (max-width: 680px) {
-    header {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .button-link {
-        top: 59%;
-        right: 1%;
-        font-size: 1.25rem;
-    }
-
-    .home-divs p {
-        font-size: 1rem;
-    }
-
-    #form {
-        border-right: none;
     }
 }

@@ -18,6 +18,7 @@ const displayInterests = (interests) => {
         img.width = '300';
         img.height = '200';
         figure.appendChild(img);
+        card.id = 'place-card';
         
         address.innerHTML = `${interest.address.street}<br>${interest.address.city}`;
         description.textContent = `${interest.description}`;
