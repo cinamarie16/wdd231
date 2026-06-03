@@ -1,0 +1,44 @@
+@media screen and (min-width: 38rem) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    nav a:hover {
+        background-color: var(--accent2);
+        border: var(--thinBorder);
+        border-radius: var(borderRadius);
+    }
+
+    .button-link {
+        top: 59%;
+        right: 1%;
+        font-size: 1.25rem;
+    }
+
+    .current {
+        border-left: var(--thinBorder);
+        border-right: var(--thinBorder);
+    }
+
+
+    .home-divs p {
+        font-size: 1rem;
+    }
+
+    #form {
+        border-right: none;
+    }
+
+    #place-card {
+        grid-template-areas:
+            "name name"
+            "img desc"
+            "img address"
+            "button button";
+    }
+    #place-card img:hover {
+        border: var(--border-style);
+        box-shadow: var(--box-shadow);
+    }
+}
