@@ -1,0 +1,351 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font);
+    font-family: var(--bodyFont);
+    background-color: var(--background);
+    border-radius: var(--borderRadius);
+    }
+
+:root {
+    --primary: #642280;
+    --accent: #FFCCE8;
+    --font: #190D1B;
+    --background: #f2f2e6;
+    --accent2: #AB84B9;
+    --input: #FCCCFF;
+    --borderStyle: 5px groove #642280;
+    --thinBorder: 2px solid #411B50;
+    --borderRadius: 10px 0px;
+    --headingFont: "Satisfy", cursive;
+    --bodyFont: "Lora", serif;
+    --boxShadow: 5px 5px 5px var(--primary);
+}
+/* everything that needs a border */
+h1, h2, footer,
+.flip-card, fieldset {
+   border: var(--borderStyle);
+   border-radius: var(--borderRadius); 
+}
+/* everything that needs a thin border */
+#menu, nav, nav a:hover,
+.project-card, .char-card,
+.flip-card-back button, form,
+input[type="text"],
+input[type="email"],
+select, textarea,
+.confirmation,
+.other-info  {
+    border: var(--thinBorder);
+    border-radius: var(--borderRadius);
+}
+/* all background colors that are the same */
+#menu, nav, nav a, nav li, h3,
+.author-container .flip-card,
+.author-container p,
+form {
+    background-color: var(--accent);
+}
+nav a:hover, h2,
+.flip-card-back button,
+.confirmation, .confirmation span {
+    background-color: var(--accent2);
+}
+/* everything that needs a box shadow */
+.char-card, .project-card,
+.other-info, .flip-card-back button,
+.card-img, input[type="submit"] {
+    box-shadow: var(--boxShadow);
+}
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0.75em;
+    right: 0.75em;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 2px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav li {
+    display: none;
+    border-radius: 0;
+}
+
+.open li {
+    display: block;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1, h2, footer {
+    text-align: center;
+}
+
+h1, footer p, footer span,
+.project-info, .project-info p,
+.main-info, .main-info p {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+h1, h2 {
+    font-family: var(--headingFont);
+    padding: .5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: .5rem;
+    font-size: 1.75rem;
+    width: 99%;
+}
+
+h3 {
+    text-align: center;
+    padding: .5rem;
+    border-bottom: var(--thinBorder);
+}
+
+main p, .project-card p,
+.char-card p {
+    padding: 5px;
+    text-align: center;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    place-items: center;
+    justify-content: center;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+.project-card,
+.char-card {
+    align-self: start;
+}
+
+.author-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    box-shadow: 0 4px 8px 0 #74226C33, 0 6px 20px 0 #74226C30;
+}
+
+.flip-card-inner {
+    text-align: center;
+    transition: transform 0.8s, height 0.8s;
+    transform-style: preserve-3d;
+    display: grid;
+    grid-template-areas: "card";
+}
+
+.flip-card.is-flipped .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card.is-flipped .flip-card-back {
+    position: relative;
+}
+
+.flip-card.is-flipped .flip-card-front {
+    position: absolute;
+}
+
+.flip-card-front,
+.flip-card-back {
+    grid-area: card;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(0deg);
+}
+
+.flip-card-front {
+    position: relative;
+}
+
+.flip-card-back {
+    position: absolute;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+
+.flip-card-back h2 {
+    width: 97%;
+}
+
+.flip-card-back p {
+    padding: 10px;
+}
+
+.flip-card-back button {
+    padding: .5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-img {
+    width: 97%;
+}
+
+.project-info, .main-info,
+.other-info {
+    padding: .5rem;
+}
+
+.project-card, .char-card,
+.other-info {
+    margin: .5rem;
+}
+
+.char-card .card-img {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    margin: 10px;
+    width: 100%;
+    max-width: 750px;
+}
+
+fieldset {
+    margin: 1rem auto;
+    padding: .75rem;
+    width: 100%;
+    min-width: 0;
+    max-width:500px;
+}
+
+legend {
+    padding: 0 .5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 0;
+}
+
+label, .label-heading {
+    display: block;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.label-heading {
+    padding-top: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    background-color: var(--input);
+    padding: .75rem;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--input), var(--accent2));
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+
+input:required,
+select:required {
+    border-left: 8px solid var(--accent2);
+}
+
+input:required:valid,
+select:required:valid {
+    border-left: 8px solid var(--primary);
+}
+
+.confirmation {
+    margin-top: .5rem;
+    width: 90%;
+}
+
+footer {
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+footer p {
+    border-radius: 0;
+}

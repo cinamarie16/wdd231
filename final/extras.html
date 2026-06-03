@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucina M. Huff | Extras</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="Anything interesting I think readers will want to know, plus a newsletter sign-up.">
+    <meta name="author" content="Lucina M. Huff">
+    <link rel="stylesheet" href="styles/author-site.css">
+    <link rel="stylesheet" href="styles/author-site-large.css">
+    <script src="scripts/extras.js" defer></script>
+    <script src="scripts/common.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Extras</h1>
+        <button aria-label="menu" id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="wips.html" id="wips">WIPS</a></li>
+                <li><a href="extras.html" id="extras">Extras</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+    <main>
+        <details>
+            <summary><h2>Newsletter Sign-Up</h2></summary>
+            <div class="form-container">
+                <form method="get" action="confirmation.html" id="form">
+                    <fieldset>
+                        <legend>Reader Info</legend>
+                        <div class="input">
+                            <label for="fname" class="label-heading">First Name* <input type="text" name="fname" id="fname" required></label>
+                        </div>
+                        <div class="input">
+                            <label for="lname" class="label-heading">Last Name* <input type="text" name="lname" id="lname" required></label>
+                        </div>
+                        <div class="input">
+                            <label for="email" class="label-heading">Email* <input type="email" name="email" id="email" placeholder="someone@email.com" required></label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Optional Info</legend>
+                        <div class="label-heading">What is your favorite book?</div>
+                        <label for="peas"><input type="radio" name="favorite" id="peas" value="peas"> Peas for Princes</label>
+                        <label for="slumber"><input type="radio" name="favorite" id="slumber" value="slumber"> Ethereal Slumber</label>
+                        <label for="sea-rose"><input type="radio" name="favorite" id="sea-rose" value=""> Little Sea Rose</label>
+                        <label for="memories"><input type="radio" name="favorite" id="memories" value=""> The Book of Memories</label>
+        
+                        <div class="label-heading">Which book(s) are you looking forward to?</div>
+                        <label for="reflections"><input type="checkbox" id="reflections" name="reflections" value="yes"> Reflections</label>
+                        <label for="loyalty"><input type="checkbox" id="loyalty" name="loyalty" value="yes"> Of Love and Loyalty</label>
+                        <label for="beauty"><input type="checkbox" id="beauty" name="beauty" value="beauty"> Beauty Unseen</label>
+                        <label for="willa"><input type="checkbox" id="willa" name="willa" value="yes"> Bound by Grace and Steel</label>
+        
+                        <div class="input">
+                            <label for="frequency" class="label-heading">What is your preferred newsletter frequency? 
+                                <select name="frequency" id="frequency">
+                                    <option value="" disabled selected>Please Select</option>
+                                </select>
+                            </label>
+                        </div>
+    
+                        <div class="input">
+                            <label for="comments" class="label-heading">Comments: <textarea name="comments" id="comments" rows="5"></textarea></label>
+                        </div>
+        
+                        <input type="submit" value="Sign Up Now!">
+                    </fieldset>
+                </form>
+            </div>
+        </details>
+
+        <details>
+            <summary><h2>About the Author</h2></summary>
+            <div class="author-container" id="author-container">
+            </div>
+        </details>
+        
+    </main>
+
+    <footer>
+        <p>&copy;<span id='currentyear'></span> 📔 Lucina M. Huff 📖 Utah</p>
+        <p id='lastModified'></p>
+    </footer>
+</body>
+
+</html>

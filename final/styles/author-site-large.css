@@ -1,0 +1,65 @@
+@media screen and (min-width: 500px) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .flip-card {
+        width: 400px;
+        height: 800 px;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card:hover .flip-card-back {
+        position: relative;
+    }
+
+    .flip-card:hover .flip-card-front {
+        position: absolute;
+    }
+    form {
+        max-width: 900px;
+    }
+    fieldset {
+        max-width: 800px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        min-width: 400px;
+        max-width: 550px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    nav {
+        padding: 10px;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        padding: .5rem .75rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    nav li {
+        display: block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
