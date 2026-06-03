@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucina M. Huff | WIPs</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="description" content="My current in progress projects with things I use as inspiration to keep me going.">
+    <title>Lucina M. Huff | About Me</title>
+    <meta name="description" content="All about me: my writing process and other things I like.">
     <meta name="author" content="Lucina M. Huff">
-    <link rel="stylesheet" href="styles/author-site.css">
-    <link rel="stylesheet" href="styles/author-site-large.css">
-    <script src="scripts/wips.js" defer></script>
-    <script src="scripts/common.js" defer></script>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/author-small.css">
+    <link rel="stylesheet" href="styles/author-medium.css">
+    <link rel="stylesheet" href="styles/author-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- <script src="scripts/homepage.js" defer></script> -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    
+    
+    <meta property='og:title' content='Lucina M. Huff | About Me'>
+    <meta property='og:description' content="All about me: my writing process and other things I like.">
+    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/final/images/collage-social-meta.webp'>
+    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/final/about.html'>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Satisfy&display=swap"
@@ -19,19 +31,23 @@
 </head>
 <body>
     <header>
-        <h1>Works in Progress</h1>
-        <button aria-label="menu" id="menu"></button>
-        <nav>
+        <div class="hdr-top">
+            <img src="images/author-social-meta.webp" alt="site logo" width="1" height="1">
+            <span>Lucina M. Huff</span>
+    
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Books</a></li>
-                <li><a href="wips.html" id="wips">WIPS</a></li>
-                <li><a href="extras.html" id="extras">Extras</a></li>
+                <li><a href="index.html" aria-label="home">Books</a></li>
+                <li class="current"><a href="about.html" aria-label="about me">About Me</a></li>
+                <li><a href="extras.html" aria-label="contact/newsletter">Contact/Newsletter</a></li>
             </ul>
         </nav>
-    
     </header>
     
     <main>
+        <h1>Works in Progress</h1>
         <details>
             <summary><h2>The Books</h2></summary>
             <div class="card-container" id="proj-container">
@@ -55,8 +71,24 @@
     </main>
     
     <footer>
-        <p>&copy;<span id='currentyear'></span> 📔 Lucina M. Huff 📖 Utah</p>
-        <p id='lastModified'></p>
+        <div id="subscribe">
+            <iframe src="https://lucinamhuff.substack.com/embed" width="280" height="187" frameborder="0"
+                scrolling="no"></iframe>
+        </div>
+    
+        <div id="social">
+            <a href="https://lucinamhuff.substack.com/" target="_blank" aria-label="substack"><img src="images/substack.svg"
+                    alt="substack" width="16" height="16"></a>
+            <a href="https://www.facebook.com/LucinaMHuff" target="_blank" aria-label="facebook"><img
+                    src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lucina-m-huff/" target="_blank" aria-label="linkedin"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        </div>
+    
+        <div id="copyright">
+            <p>&copy;<span id='currentyear'></span> Lucina M. Huff 📖 Utah </p>
+            <p id='lastModified'></p>
+        </div>
     </footer>
 </body>
 </html>

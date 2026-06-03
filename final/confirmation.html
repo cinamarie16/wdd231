@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucina M. Huff | Sign-up Confirmation</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="description" content="A friendly thank you for signing up for the newsletter.">
+    <title>Lucina M. Huff | Confirmation</title>
+    <meta name="description" content="Confirmation page for your contact form or newsletter sign-up.">
     <meta name="author" content="Lucina M. Huff">
-    <link rel="stylesheet" href="styles/author-site.css">
-    <link rel="stylesheet" href="styles/author-site-large.css">
-    <script src="scripts/confirmation.js" defer></script>
-    <script src="scripts/common.js" defer></script>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/author-small.css">
+    <link rel="stylesheet" href="styles/author-medium.css">
+    <link rel="stylesheet" href="styles/author-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- <script src="scripts/homepage.js" defer></script> -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    
+    
+    <meta property='og:title' content='Lucina M. Huff | Confirmation'>
+    <meta property='og:description' content="Confirmation page for your contact form or newsletter sign-up.">
+    <meta property='og:image' content='https://cinamarie16.github.io/wdd231/final/images/collage-social-meta.webp'>
+    <meta property='og:url' content='https://cinamarie16.github.io/wdd231/final/confirmation.html'>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Satisfy&display=swap"
@@ -20,26 +32,47 @@
 
 <body>
     <header>
-        <h1>Confirmation</h1>
-        <button aria-label="menu" id="menu"></button>
-        <nav>
+        <div class="hdr-top">
+            <img src="images/author-social-meta.webp" alt="site logo" width="1" height="1">
+            <span>Lucina M. Huff</span>
+    
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Books</a></li>
-                <li><a href="wips.html" id="wips">WIPS</a></li>
-                <li><a href="extras.html" id="extras">Extras</a></li>
+                <li><a href="index.html" aria-label="home">Books</a></li>
+                <li><a href="about.html" aria-label="about me">About Me</a></li>
+                <li><a href="extras.html" aria-label="contact/newsletter">Contact/Newsletter</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
+        <h1>Confirmation</h1>
         <h2>Newsletter Sign-Up</h2>
         <p class="confirmation">Thanks for signing up for the newsletter!<br>Your first issue and free gift will arrive soon.<br>Be sure to check your email!</p>
         <p class="confirmation"><span>Number of newsletter sign-ups: </span><span class="sign-ups"></span></p>
     </main>
 
     <footer>
-        <p>&copy;<span id='currentyear'></span> 📔 Lucina M. Huff 📖 Utah</p>
-        <p id='lastModified'></p>
+        <div id="subscribe">
+            <iframe src="https://lucinamhuff.substack.com/embed" width="280" height="187" frameborder="0"
+                scrolling="no"></iframe>
+        </div>
+    
+        <div id="social">
+            <a href="https://lucinamhuff.substack.com/" target="_blank" aria-label="substack"><img src="images/substack.svg"
+                    alt="substack" width="16" height="16"></a>
+            <a href="https://www.facebook.com/LucinaMHuff" target="_blank" aria-label="facebook"><img
+                    src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lucina-m-huff/" target="_blank" aria-label="linkedin"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        </div>
+    
+        <div id="copyright">
+            <p>&copy;<span id='currentyear'></span> Lucina M. Huff 📖 Utah </p>
+            <p id='lastModified'></p>
+        </div>
     </footer>
 </body>
 
