@@ -13,5 +13,3 @@ export function renderSections(sections) {
     document.querySelector("#sections").innerHTML = html.join("");
 }
 
-// export function setTitle(course) { }
-// export function renderSections(sections) {}

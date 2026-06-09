@@ -7,4 +7,3 @@ export function setSectionSelection(sections) {
         sectionSelect.appendChild(option);
     });
 }
-// export function setSectionSelection(sections) {}

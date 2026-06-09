@@ -1,0 +1,154 @@
+{
+    "books" : [
+        {
+            "title" : "The Book of Memories",
+            "img" : "images/book-of-memories.webp",
+            "chars" : "Abby, Alekz, Leta",
+            "desc" : "Fifteen-year-old Abigail Fallon leads a charmed life in her upscale neighborhood, where her biggest challenge is starting high school as the new girl. Suddenly, her straightforward world changes when she is assailed by strange visions of a long-forgotten past. Her life is further complicated by the unwelcome revelation of her true relationship to her parents. Her visions leave her feeling lost and her best friend is no help at all. Throw in a few handsome boys vying for her attention, and it's enough for her to start questioning her sanity. Should she allow herself to fall in love? Will these visions be her undoing? Or will she soar to unprecedented triumphs? Join Abigail as she navigates her ordinary -and extraordinary- teen life.",
+            "status" : "Published",
+            "progress" : "68,125/60,000 words",
+            "url" : "https://books2read.com/bookofmemories",
+            "series" : "Recollection Cycle"
+        },
+        {
+            "title": "Peas for Princes",
+            "img": "images/peas-for-princes.webp",
+            "chars": "Myra, Fawx, Soren, Owain, Ronan",
+            "desc": "With hopes of claiming her happily-ever-after fading after years of disappointment, Myra fears the perfect prince for her doesn't exist. What other reason could there be for her lack of suitors?<br><br>Her royal parents, on the other hand, refuse to give up on helping their beloved daughter find happiness. Invitations to a tournament of sorts have gone out to kingdoms far and wide, inviting a bevy of eligible young men to participate in a series of tests to win the princess's heart.<br><br>Suddenly, Myra has a surplus of men to choose from. The mischievous Fawx. Cool and charming Soren. Swoon-worthy Owain. Quiet and considerate Ronan. Can she find love among them? Or will they fail her ancestors' traditional test and cast her back to her isolated existence?<br><br>PEAS FOR PRINCES is a short retelling of Hans Christian Andersen's The Princess and the Pea influenced by shojo anime.<br><br>ReTold Minis is a collection of standalone novellas with the common theme of gender-swapped main characters.",
+            "status": "Published",
+            "progress" : "15,500/15,000 words",
+            "url": "https://books2read.com/peasforprinces",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "Ethereal Slumber",
+            "img": "images/ethereal-slumber.webp",
+            "chars": "Pippa, Titus, Sam, Mer",
+            "desc": "17-year-old Pippa Hubbard dreams of being in a bustling big city, pursuing a glamorous career in fashion design. Instead, her mother drags her to Eidolon, a minuscule town in the middle-of-nowhere. Sure, a surprise inheritance from a family friend is nice. However, it does nothing to lessen her fears of being bored to tears in the tiny town.<br>But bored is the last thing she'll be in Eidolon. Secrets buried beneath the sleepy little burg are eager to claw their way to the surface in ways impossible to ignore.<br><br>A gust of wind where the air is still.<br><br>The whinny of a horse when she's all alone.<br><br>Instead of running from these oddities, Pippa makes the bold decision to investigate only to find herself face-to-face with a disembodied spirit.<br><br>He claims his name is Titus Zorana and pleads with Pippa to help him break free from a curse binding him to a local house. As unease prickles down her spine, Pippa asks herself the two questions that could alter the course of her life forever. Should she believe him and try to help? Or trust her instincts and run?<br><br>ETHEREAL SLUMBER is a short novella, inspired by The Grimms' Briar Rose.<br><br>ReTold Minis is a collection of standalone novellas with the common theme of gender-swapped main characters.",
+            "status": "Published",
+            "progress": "16,697/15,000 words",
+            "url": "https://books2read.com/etherealslumber",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "Little Sea Rose",
+            "img": "images/little-sea-rose.webp",
+            "chars": "Kale, Rosheen, Kelprin, Leo",
+            "desc": "For the first time in fifteen generations, the underwater kingdom has a sea prince.<br><br>Adored and exalted, Kale has spent his life surrounded by guards and shadowed everywhere he swims. The youngest of six, and the only boy, he's felt distanced from his sisters and plagued by loneliness his entire young life.<br><br>Until on his sixteenth birthday, he fulfills the law by venturing to the surface. There, he witnesses a land girl fighting for her life. While law forbids him from allowing himself to be seen, he wastes no time rescuing the beautiful Rosheen.<br><br>Yet trouble finds him when he returns to the sea. Finally free from his guards, Kale explores the forbidden ruins. To his surprise, he discovers a clue to his father's disappearance along with signs pointing to the co-existence between sea and land people. Before he can tell a soul, a curse is activated, turning the sea prince human.<br><br>Unable to speak, he ventures top-side where he must rely on Rosheen to help unravel the mystery. Something sinister lurks in the depths, spreading its inky hate through the kingdom. Can Kale and Rosheen uncover the clues that explain his father's disappearance? Or will they be the next victims of the sea witch's cruel curse?<br><br>LITTLE SEA ROSE is a short retelling of Hans Christian Anderson's The Little Mermaid.<br><br>ReTold Minis is a collection of standalone novellas with the common theme of gender-swapped main characters.",
+            "status": "Published",
+            "progress": "18,176/18,000 words",
+            "url": "https://books2read.com/littlesearose",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "Beauty Unseen",
+            "img": "images/blue-rose.webp",
+            "chars": "Zain, Gemma",
+            "desc": "A gender-swapped, new adult, contemporary novella retelling the story of Beauty and the Beast.",
+            "status": "In Progress",
+            "progress": "6,181/18,000 words",
+            "url": "none",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "The Executive's Crimson Cloak",
+            "img": "none",
+            "chars": "Oliver, Artemis",
+            "desc": "A gender-swapped, new adult, contemporary novella retelling the story of Little Red Riding Hood. A fake relationship sweet romance.",
+            "status": "Brainstorming",
+            "progress": "0/18,000 words",
+            "url": "none",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "Battle-Dancers' Dozen",
+            "img": "none",
+            "chars": "none",
+            "desc": "A gender-swapped, novella retelling the story of The Twelve Dancing Princesses.",
+            "status": "Brainstorming",
+            "progress": "0/20,000 words",
+            "url": "none",
+            "series": "ReTold Minis"
+        },
+        {
+            "title": "Bound by Grace and Steel",
+            "img": "images/grace-steel.webp",
+            "chars": "Willa, Fenryn",
+            "desc": "Willa -a human warrior- unwittingly rescues Fenryn -an elven prince. Despite her hatred for the oppressive ruling class that is exclusively populated by elves, she then embarks on a quest with him to find the lost imperial seal.",
+            "status": "In Progress",
+            "progress": "14,078/100,000 words",
+            "url": "none",
+            "series": "Standalone"
+        },
+        {
+            "title": "The Collected Tales of Brymhoarn Thunderhayz",
+            "img": "none",
+            "chars": "Brymhoarn Thunderhayz",
+            "desc": "A collection of the short stories about the life of the storm dragon, Brymhoarn Thunderhayz",
+            "status": "Brainstorming",
+            "progress": "0/100,000 words",
+            "url": "none",
+            "series": "Standalone"
+        },
+        {
+            "title": "Of Love and Loyalty",
+            "img": "images/vamps.webp",
+            "chars": "Cypress, Aren, Rowan",
+            "desc": "In a world where vampires are nothing more than undead horror myths, 18-year-old vampire Cypress Therkoma is thrust onto a path that will change the world. Not that she's trying to do that. She just wants to save her younger brother from the bigoted vampire hunters.",
+            "status": "In Progress",
+            "progress": "21,213/90,000 words",
+            "url": "none",
+            "series": "Blood and Belonging"
+        },
+        {
+            "title": "Of Roles and Rules",
+            "img": "none",
+            "chars": "Cypress, Aren, Rowan",
+            "desc": "The story of Cypress, Aren, and Rowan continues.",
+            "status": "Brainstorming",
+            "progress": "0/90,000 words",
+            "url": "none",
+            "series": "Blood and Belonging"
+        },
+        {
+            "title": "Of Fangs and Freedom",
+            "img": "none",
+            "chars": "Cypress, Aren, Rowan",
+            "desc": "The story of Cypress, Aren, and Rowan concludes.",
+            "status": "Brainstorming",
+            "progress": "0/90,000 words",
+            "url": "none",
+            "series": "Blood and Belonging"
+        },
+        {
+            "title": "The Book of Reflections: Part 1",
+            "img": "images/reflections1.webp",
+            "chars": "Alekz, Abby, Leta",
+            "desc": "Alekzander Katell, Prince of Viridia, is an arrogant, entitle cad until he meets Abigail, the princess next door. She is everything he is not: kind, thoughtful, selfless. After falling madly in love with her, he decides it's time to change. But how?",
+            "status": "In Progress",
+            "progress": "61,609/60,000 words",
+            "url": "none",
+            "series": "Recollection Cycle"
+        },
+        {
+            "title": "The Book of Reflections: Part 2",
+            "img": "images/reflections2.webp",
+            "chars": "Alekz, Abby, Leta",
+            "desc": "After making a plan of action with his sister, Alekzander embarks on a quest across the universe to become a man worthy of Abigail's love. Placed on Earth with no memories of his past, will he be able to change his nature?",
+            "status": "In Progress",
+            "progress": "57,675/60,000 words",
+            "url": "none",
+            "series": "Recollection Cycle"
+        },
+        {
+            "title": "The Book of Reflections: Part 3",
+            "img": "images/reflections3.webp",
+            "chars": "Alekz, Abby, Leta",
+            "desc": "Alekzander's dream is about to come true. He and Abigail are getting married! There's just one catch: she no longer has any idea who he is.",
+            "status": "In Progress",
+            "progress": "15,878/60,000 words",
+            "url": "none",
+            "series": "Recollection Cycle"
+        }
+    ]
+}
