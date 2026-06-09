@@ -7,7 +7,7 @@
     nav a:hover {
         background-color: var(--accent2);
         border: var(--thinBorder);
-        border-radius: var(borderRadius);
+        border-radius: 10px 0px;
     }
 
     .button-link {
@@ -20,7 +20,6 @@
         border-left: var(--thinBorder);
         border-right: var(--thinBorder);
     }
-
 
     .home-divs p {
         font-size: 1rem;

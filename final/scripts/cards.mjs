@@ -1,21 +1,4 @@
-// const booksUrl = 'data/books.json';
-
-
-export async function getBookData(url) {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        // console.log(data);
-        const booksArray = Object.values(data.books || {});
-        // console.log(booksArray);
-        displayBookCards(booksArray);
-    } catch (error) {
-        console.error("Error fetching data:", error);
-        return [];
-    }
-}
-
-function displayBookCards(books) {
+export function displayBookCards(books) {
     const container = document.getElementById('card-container');
     if (!container) return;
     container.innerHTML = '';
@@ -39,15 +22,35 @@ function displayBookCards(books) {
                 }
             });
             container.appendChild(bookCard);
+        } else if (book.img && book.img === 'none') {
+            const blankCard = createBlankCard(book);
+            container.appendChild(blankCard);
         }
     });
+}
+
+function createBlankCard(book) {
+    const card = document.createElement("div");
+    card.className = "nonflip-card";
+
+    const inner = document.createElement("div");
+    inner.className = "nonflip-card-inner";
+    inner.innerHTML = `
+        <h3>${book.title}</h3>
+        <p>${book.desc}</p>
+        <p>Main Characters: ${book.chars}<br>Series: ${book.series}</p>
+        <p>Status: ${book.status}<br>Progress: ${book.progress}</p>
+        `
+    
+    card.appendChild(inner);
+    return card;
 }
 
 function createBookCard(book) {
     const card = document.createElement("div");
     card.className = "flip-card";
 
-    const inner = document.createElement("div")
+    const inner = document.createElement("div");
     inner.className = "flip-card-inner";
 
     const front = document.createElement("div");
@@ -66,8 +69,8 @@ function createBookCard(book) {
         back.innerHTML = `
         <h3>${book.title}</h3>
         <p>${book.desc}</p>
-        <p>Main Characters: ${book.chars} / Series: ${book.series}</p>
-        <p>Status: ${book.status} / Progress: ${book.progress}</p>
+        <p>Main Characters: ${book.chars}<br>Series: ${book.series}</p>
+        <p>Status: ${book.status}<br>Progress: ${book.progress}</p>
         <button type="button" onclick="window.location.href='${book.url}'">Buy Now</button>
         `
     } else {

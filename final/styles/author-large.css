@@ -6,7 +6,7 @@
     }
     .flip-card {
         width: 400px;
-        height: 800 px;
+        height: 800px;
     }
     
     .flip-card:hover .flip-card-inner {
@@ -20,9 +20,11 @@
     .flip-card:hover .flip-card-front {
         position: absolute;
     }
+
     form {
         max-width: 900px;
     }
+
     fieldset {
         max-width: 800px;
     }
@@ -69,26 +71,6 @@
     .hdr-top span {
         font-size: 3.1rem;
     }
-
-    /* nav {
-        padding: 10px;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 0 1rem;
-        padding: .5rem .75rem;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    nav li {
-        display: block;
-    } */
 
     h1 {
         font-size: 3rem;

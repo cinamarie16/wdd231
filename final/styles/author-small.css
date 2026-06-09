@@ -151,7 +151,7 @@ h2, footer {
     text-align: center;
 }
 
-h1, #copyright, #social, #subscribe,
+h1, #copyright, #social,
 footer p, footer span, footer img,
 .project-info, .project-info p,
 .main-info, .main-info p {
@@ -387,17 +387,24 @@ select:required:valid {
     width: 90%;
 }
 
-#social, #copyright, #subscribe {
-    border-radius: 0;
-}
-
 #social, #copyright {
+    border-radius: 0;
     padding-top: 10px;
 }
 
 #copyright {
     padding-bottom: 10px;
 }
+
+/* #subscribe {
+    border-radius: 0;
+    background-color: var(--primary);
+    color: var(--background);
+} */
+/* iframe {
+    border: 0;
+    overflow: hidden;
+} */
 
 footer {
     margin-top: 10px;

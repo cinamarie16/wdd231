@@ -48,13 +48,33 @@
     <main>
         <h1>Home</h1>
         <h2>The Books</h2>
+
+        <button id="book-filter-button">Filter Displayed Books</button>
+        <dialog id="filter-modal">
+            <div class="modal-content">
+                <label for="book-select">Filter Group:</label>
+                <select name="book-select" id="book-select">
+                    <option value="all">All Books</option>
+                    <option value="series">By Series</option>
+                    <option value="status">By Status</option>
+                </select>
+        
+                <label for="sub-select">Specific Filter:</label>
+                <select name="sub-select" id="sub-select" disabled>
+                    <option value="all">Select a group first</option>
+                </select>
+    
+                <button id="close-button">Close and Apply</button>
+            </div>
+        </dialog>
+
         <div class="card-container" id="card-container">
         </div>
     </main>
 
     <footer>
         <!-- <div id="subscribe">
-            <iframe src="https://lucinamhuff.substack.com/embed" width="280" height="187" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://lucinamhuff.substack.com/embed" width="280" height="187"></iframe>
         </div> -->
         
         <div id="social">

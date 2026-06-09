@@ -3,7 +3,6 @@ import { memberships } from "../data/membership.mjs";
 const timestamp = document.querySelector('#timestamp');
 timestamp.value = new Date().toLocaleString();
 
-
 const levelBox = document.querySelector('#membership');
 
 const levelModal = document.querySelector('#membership-levels');

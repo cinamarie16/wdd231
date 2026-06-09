@@ -2,11 +2,8 @@ import { mobileNav } from "./navigation.mjs";
 import { getYear } from "./date.mjs";
 import { lastMod } from "./date.mjs";
 
-import { getBookData } from './cards.mjs';
-
-const booksUrl = 'data/books.json';
-
-getBookData(booksUrl);
+import { selectApp } from "./filter.mjs";
+selectApp();
 
 mobileNav();
 getYear();
