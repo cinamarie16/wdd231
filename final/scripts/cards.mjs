@@ -16,9 +16,9 @@ export function displayBookCards(books) {
                 const isFlipped = this.classList.contains('is-flipped');
     
                 if (isFlipped) {
-                    inner.style.height = back.offsetHeight + 'px';
+                    inner.style.height = `${back.offsetHeight}px`;
                 } else {
-                    inner.style.height = front.offsetHeight + 'px';
+                    inner.style.height = `${front.offsetHeight}px`;
                 }
             });
             container.appendChild(bookCard);

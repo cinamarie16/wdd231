@@ -188,15 +188,6 @@ main p, .project-card p,
     text-align: center;
 }
 
-summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 .form-container {
     display: flex;
     justify-content: center;

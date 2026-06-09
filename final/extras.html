@@ -47,60 +47,50 @@
     
     <main>
         <h1>Extras</h1>
-        <details>
-            <summary><h2>Newsletter Sign-Up</h2></summary>
+        <div>
+            <h2>~~~ Contact ~~~</h2>
             <div class="form-container">
-                <form method="get" action="confirmation.html" id="form">
+                <form method="GET" action="confirmation.html" id="form">
                     <fieldset>
-                        <legend>Reader Info</legend>
+                        <legend>Contact Message</legend>
                         <div class="input">
-                            <label for="fname" class="label-heading">First Name* <input type="text" name="fname" id="fname" required></label>
+                            <label for="fname" class="label-heading">First Name* <input type="text" name="fname" id="fname" required autocomplete="given-name"></label>
                         </div>
                         <div class="input">
-                            <label for="lname" class="label-heading">Last Name* <input type="text" name="lname" id="lname" required></label>
+                            <label for="lname" class="label-heading">Last Name* <input type="text" name="lname" id="lname" required autocomplete="family-name"></label>
                         </div>
                         <div class="input">
-                            <label for="email" class="label-heading">Email* <input type="email" name="email" id="email" placeholder="someone@email.com" required></label>
+                            <label for="email" class="label-heading">Email* <input type="email" name="email" id="email" placeholder="someone@email.com" required autocomplete="email"></label>
                         </div>
+                        <div class="input">
+                            <label for="comments" class="label-heading">Message* <textarea name="comments" id="comments" rows="5" required placeholder="Type your message..."></textarea></label>
+                        </div>
+                        <div class="label-heading">Would you like to subscribe to the newsletter?</div>
+                        <label for="yes"><input type="radio" name="newsletter" id="yes" value="Yes, please"> Yes, please</label>
+                        <label for="no"><input type="radio" name="newsletter" id="no" value="No, thanks"> No, thanks</label>
+        
+                        <input type="submit" value="Send">
                     </fieldset>
     
-                    <fieldset>
-                        <legend>Optional Info</legend>
-                        <div class="label-heading">What is your favorite book?</div>
-                        <label for="peas"><input type="radio" name="favorite" id="peas" value="peas"> Peas for Princes</label>
-                        <label for="slumber"><input type="radio" name="favorite" id="slumber" value="slumber"> Ethereal Slumber</label>
-                        <label for="sea-rose"><input type="radio" name="favorite" id="sea-rose" value=""> Little Sea Rose</label>
-                        <label for="memories"><input type="radio" name="favorite" id="memories" value=""> The Book of Memories</label>
-        
-                        <div class="label-heading">Which book(s) are you looking forward to?</div>
-                        <label for="reflections"><input type="checkbox" id="reflections" name="reflections" value="yes"> Reflections</label>
-                        <label for="loyalty"><input type="checkbox" id="loyalty" name="loyalty" value="yes"> Of Love and Loyalty</label>
-                        <label for="beauty"><input type="checkbox" id="beauty" name="beauty" value="beauty"> Beauty Unseen</label>
-                        <label for="willa"><input type="checkbox" id="willa" name="willa" value="yes"> Bound by Grace and Steel</label>
-        
-                        <div class="input">
-                            <label for="frequency" class="label-heading">What is your preferred newsletter frequency? 
-                                <select name="frequency" id="frequency">
-                                    <option value="" disabled selected>Please Select</option>
-                                </select>
-                            </label>
-                        </div>
-    
-                        <div class="input">
-                            <label for="comments" class="label-heading">Comments: <textarea name="comments" id="comments" rows="5"></textarea></label>
-                        </div>
-        
-                        <input type="submit" value="Sign Up Now!">
-                    </fieldset>
                 </form>
             </div>
-        </details>
+        </div>
 
-        <details>
-            <summary><h2>About the Author</h2></summary>
+        <div>
+            <h2>~~~ About ~~~</h2>
             <div class="author-container" id="author-container">
             </div>
-        </details>
+        </div>
+
+        <div>
+            <h2>~~~ Other ~~~</h2>
+            <p class="other-info">MY WRITING PROCESS: I'm what's called a pantser, which means that I don't plot out what is going to happen in my books before I write them. It also means that sometimes while I'm writing my characters end up guiding me in different directions than I had originally intended for them.</p>
+            <p class="other-info">INSPIRATION: Other than character images, I aso have a Spotify playlist for each book or character.</p>
+            <p class="other-info">AUDIOBOOKS: I'm working on creating audio versions. I plan on using AI generated narrators. Because I'm an indie author with limited funds. But also because I like to use technological tools wisely.</p>
+            <p class="other-info">MISC: Since Jan 2025, I've been a student at BYU-Pathway Worldwide where I am working towards a Bachelor's degree in Software Development. Yes, I did design this website, and I'm super excited about it! I also recently started a Substack and a Discord server.</p>
+
+        </div>
+
         
     </main>
 
