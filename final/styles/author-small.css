@@ -21,6 +21,7 @@
     --headingFont: "Satisfy", cursive;
     --bodyFont: "Lora", serif;
     --boxShadow: 5px 5px 5px var(--primary);
+    --backdrop: #190D1BDD
 }
 /* everything that needs a border */
 h1, h2, footer,
@@ -29,19 +30,18 @@ h1, h2, footer,
    border-radius: var(--borderRadius); 
 }
 /* everything that needs a thin border */
-#menu, nav,
-.project-card, .char-card,
-.flip-card-back button, form,
+nav, .nonflip-card,
+.flip-card-back button,
 input[type="text"],
 input[type="email"],
-select, textarea,
+textarea,
 .confirmation,
-.other-info  {
+.other-info {
     border: var(--thinBorder);
     border-radius: var(--borderRadius);
 }
 /* all background colors that are the same */
-#menu, nav, nav li, h3,
+nav, nav li, h3,
 .author-container .flip-card,
 .author-container p,
 form {
@@ -52,9 +52,9 @@ h2, .flip-card-back button,
     background-color: var(--accent2);
 }
 /* everything that needs a box shadow */
-.char-card, .project-card,
 .other-info, .flip-card-back button,
-.card-img, input[type="submit"] {
+.card-img, input[type="submit"],
+#close-button, #book-filter-button {
     box-shadow: var(--boxShadow);
 }
 
@@ -81,12 +81,13 @@ header span {
     background-color: var(--primary);
     color: var(--background);
 }
+
 #nav-button {
     font-weight: 700;
     background-color: var(--primary);
     font-size: 1.75rem;
     color: var(--background);
-    position: fixed;
+    position: absolute;
     top: 0.75em;
     right: 0.75em;
     border: var(--thinBorder);
@@ -129,12 +130,21 @@ nav a {
     font-weight: 700;
 }
 
-#menu {
-    display: block;
-    font-size: 1.5rem;
-    position: fixed;
-    top: 0.75em;
-    right: 0.75em;
+#filter-modal {
+    padding: .3rem;
+    margin: 1.3rem;
+}
+
+.modal-content, .modal-content select {
+    text-align: center;
+}
+
+.modal-content select {
+    padding: 5px;
+}
+
+::backdrop {
+    background-color: var(--backdrop);
 }
 
 #nav-button,
@@ -153,7 +163,6 @@ h2, footer {
 
 h1, #copyright, #social,
 footer p, footer span, footer img,
-.project-info, .project-info p,
 .main-info, .main-info p {
     background-color: var(--primary);
     color: var(--background);
@@ -172,8 +181,8 @@ h1 {
 
 h2 {
     margin-top: .5rem;
+    margin-bottom: .5rem;
     font-size: 1.75rem;
-    width: 99%;
 }
 
 h3 {
@@ -182,8 +191,7 @@ h3 {
     border-bottom: var(--thinBorder);
 }
 
-main p, .project-card p,
-.char-card p {
+main p {
     padding: 5px;
     text-align: center;
 }
@@ -195,25 +203,21 @@ main p, .project-card p,
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 5px;
-    place-items: center;
-    justify-content: center;
-    padding: .5rem;
+    align-items: center;
     overflow: hidden;
 }
-
-.project-card,
-.char-card {
-    align-self: start;
-}
-
 .author-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
+    width: 99%;
+}
+
+.nonflip-card {
+    width: 99%;
 }
 
 .flip-card {
@@ -226,8 +230,6 @@ main p, .project-card p,
     text-align: center;
     transition: transform 0.8s, height 0.8s;
     transform-style: preserve-3d;
-    display: grid;
-    grid-template-areas: "card";
 }
 
 .flip-card.is-flipped .flip-card-inner{
@@ -244,7 +246,6 @@ main p, .project-card p,
 
 .flip-card-front,
 .flip-card-back {
-    grid-area: card;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
@@ -263,8 +264,9 @@ main p, .project-card p,
     flex-direction: column;
 }
 
-.flip-card-back h2 {
-    width: 97%;
+.flip-card-back h3 {
+    width: 85%;
+    margin-top: 3px;
 }
 
 .flip-card-back p {
@@ -279,26 +281,19 @@ main p, .project-card p,
 }
 
 .card-img {
-    width: 97%;
+    width: 99%;
+    height: auto;
 }
 
-.project-info, .main-info,
-.other-info {
+.main-info, .other-info {
     padding: .5rem;
 }
 
-.project-card, .char-card,
 .other-info {
     margin: .5rem;
 }
 
-.char-card .card-img {
-    width: 100%;
-    height: 100%;
-}
-
 form {
-    margin: 10px;
     width: 100%;
     max-width: 750px;
 }
@@ -317,6 +312,7 @@ legend {
     font-weight: 600;
     text-align: left;
     margin-left: 0;
+    border-bottom: var(--thinBorder);
 }
 
 label, .label-heading {
@@ -336,40 +332,40 @@ label, .label-heading {
     font-weight: 500;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"] {
     margin-right: 2px;
 }
 
 input[type="text"],
 input[type="email"],
-select,
 textarea {
     display: block;
     background-color: var(--input);
     padding: .75rem;
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 450px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+#close-button, #book-filter-button {
     border: none;
     background-image: linear-gradient(var(--input), var(--accent2));
     padding: .8rem;
-    width: 96%;
+    width: 99%;
     max-width: 400px;
     margin: 1rem auto;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 input:required,
-select:required {
+textarea:required {
     border-left: 8px solid var(--accent2);
 }
 
 input:required:valid,
-select:required:valid {
+textarea:required:valid {
     border-left: 8px solid var(--primary);
 }
 

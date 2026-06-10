@@ -23,12 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const front = this.querySelector(".flip-card-front");
 
             const isFlipped = this.classList.toggle("is-flipped");
-
-            if (isFlipped) {
-                inner.style.height = `${back.offsetHeight}px`;
-            } else {
-                inner.style.height = `${front.offsetHeight}px`;
-            }
         });
         container.appendChild(authorCard);
     });

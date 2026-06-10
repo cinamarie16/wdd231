@@ -1,6 +1,6 @@
 export function createMainCard(main) {
     return `
-    <div class="main-char-card">
+    <div class="nonflip-card">
         <div class="main-info">
             <img src="${main.img}" alt="${main.name}" loading="lazy" class="card-img" width=300 height=300  >
             <h3>${main.name}</h3>
@@ -16,7 +16,7 @@ export function createMainCard(main) {
 
 export function createSideCard(side) {
     return `
-    <div class="side-char-card">
+    <div class="nonflip-card">
         <div class="main-info">
             <img src="${side.img}" alt="${side.name}" loading="lazy" class="card-img" width=300 height=300>
             <h3>${side.name}</h3>

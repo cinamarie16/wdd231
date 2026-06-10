@@ -13,13 +13,6 @@ export function displayBookCards(books) {
                 const front = this.querySelector(".flip-card-front");
                 
                 this.classList.toggle('is-flipped');
-                const isFlipped = this.classList.contains('is-flipped');
-    
-                if (isFlipped) {
-                    inner.style.height = `${back.offsetHeight}px`;
-                } else {
-                    inner.style.height = `${front.offsetHeight}px`;
-                }
             });
             container.appendChild(bookCard);
         } else if (book.img && book.img === 'none') {
@@ -38,7 +31,7 @@ function createBlankCard(book) {
     inner.innerHTML = `
         <h3>${book.title}</h3>
         <p>${book.desc}</p>
-        <p>Main Characters: ${book.chars}<br>Series: ${book.series}</p>
+        <p>Characters: ${book.chars}<br>Series: ${book.series}</p>
         <p>Status: ${book.status}<br>Progress: ${book.progress}</p>
         `
     
@@ -59,6 +52,7 @@ function createBookCard(book) {
     image.setAttribute('src', book.img);
     image.setAttribute('alt', book.title);
     image.setAttribute('loading', 'lazy');
+    image.setAttribute('class', 'card-img')
     image.setAttribute('width', '300');
     image.setAttribute('height', '450');
     front.appendChild(image);
@@ -69,7 +63,7 @@ function createBookCard(book) {
         back.innerHTML = `
         <h3>${book.title}</h3>
         <p>${book.desc}</p>
-        <p>Main Characters: ${book.chars}<br>Series: ${book.series}</p>
+        <p>Characters: ${book.chars}<br>Series: ${book.series}</p>
         <p>Status: ${book.status}<br>Progress: ${book.progress}</p>
         <button type="button" onclick="window.location.href='${book.url}'">Buy Now</button>
         `
@@ -77,7 +71,7 @@ function createBookCard(book) {
         back.innerHTML = `
         <h3>${book.title}</h3>
         <p>${book.desc}</p>
-        <p>Main Characters: ${book.chars}<br>Series: ${book.series}</p>
+        <p>Characters: ${book.chars}<br>Series: ${book.series}</p>
         <p>Status: ${book.status}<br>Progress: ${book.progress}</p>
         `
     }
