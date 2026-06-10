@@ -1,4 +1,4 @@
-export const chars = [
+export const mainChars = [
     {
         "name" : "Abby",
         "img" : "images/abby.webp",
@@ -18,15 +18,6 @@ export const chars = [
         "desc" : "Prince of the kingdom of Viridia. Twin brother of Leta."
     },
     {
-        "name" : "Leta",
-        "img" : "images/leta.webp",
-        "book": "The Book of Memories and The Book of Reflections: Parts 1-3",
-        "race": "human",
-        "role": "FSC",
-        "fullName": "Aleta Isobell Katell/Cauffield",
-        "desc" : "Crown Princess of the kingdom of Viridia. Twin sister of Alekz."
-    },
-    {
         "name" : "Myra",
         "img" : "images/myra.webp",
         "book" : "Peas for Princes",
@@ -43,24 +34,6 @@ export const chars = [
         "role": "MMC",
         "fullName": "Noah Fawx",
         "desc" : "Cousin of the Empress of Wriddania. He represents the character of the 'princess' from 'The Princess and the Pea'."
-    },
-    {
-        "name" : "Soren",
-        "img" : "images/soren.webp",
-        "book" : "Peas for Princes",
-        "race": "human",
-        "role": "MSC",
-        "fullName": "Soren Andersen",
-        "desc": "Nephew of the Grand Archon, leader of the mages. He represents the character of the 'princess' from 'The Princess and the Pea'."
-    },
-    {
-        "name" : "Owain",
-        "img" : "images/owain.webp",
-        "book" : "Peas for Princes",
-        "race": "human",
-        "role": "MSC",
-        "fullName": "Owain Price",
-        "desc": "A prince of Glasmor. He represents the character of the 'princess' from 'The Princess and the Pea'."
     },
     {
         "name" : "Ronan",
@@ -90,24 +63,6 @@ export const chars = [
         "desc": "He represents the character of the 'princess' from 'Sleeping Beauty'."
     },
     {
-        "name" : "Mer",
-        "img" : "images/mer.webp",
-        "book" : "Ethereal Slumber",
-        "race": "fairy",
-        "role": "FSC",
-        "fullName": "Meredith",
-        "desc": "She represents the character of the 'blue good fairy' from 'Sleeping Beauty'."
-    },
-    {
-        "name" : "Sam",
-        "img" : "images/sam.webp",
-        "book" : "Ethereal Slumber",
-        "race": "human",
-        "role": "MSC",
-        "fullName": "Samson",
-        "desc": "He represents the character of the 'prince's horse' from 'Sleeping Beauty'."
-    },
-    {
         "name" : "Kale",
         "img" : "images/kale.webp",
         "book" : "Little Sea Rose",
@@ -125,25 +80,6 @@ export const chars = [
         "fullName": "Meara Rosheen",
         "desc": "She represents the character of the 'prince' from 'The Little Mermaid'."
     },
-    {
-        "name": "Kelprin",
-        "img": "images/kelprin.webp",
-        "book": "Little Sea Rose",
-        "race": "mermaid",
-        "role": "FSC",
-        "fullName": "Kelprin",
-        "desc": "One of Kale's sisters."
-    },
-    {
-        "name": "Leo",
-        "img": "images/leo.webp",
-        "book": "Little Sea Rose",
-        "race": "human",
-        "role": "MSC",
-        "fullName": "Theodore",
-        "desc": "A friend of Rosheen's brother. He thinks he and Rosheen are childhood sweethearts."
-    },
-
     {
         "name" : "Zain",
         "img" : "images/zain.webp",
@@ -197,14 +133,5 @@ export const chars = [
         "role": "MMC",
         "fullName": "Aren Custavandi",
         "desc" : "He's the son of the leader of the vampire hunters organization. He hates his father for being a hypocrite when he learns a family secret."
-    },
-    {
-        "name" : "Rowan",
-        "img" : "images/rowan.webp",
-        "book" : "Of Love and Loyalty",
-        "race": "vampire",
-        "role": "MSC",
-        "fullName": "Rowan Moore",
-        "desc" : "He's an orphaned vampire raised by retired vampire hunters. They're a part of the vampire liberation resistance."
     }
 ]
