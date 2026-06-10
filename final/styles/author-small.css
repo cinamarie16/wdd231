@@ -60,24 +60,24 @@ h2, .flip-card-back button,
 
 .hdr-top {
     display: grid;
-    grid-template-columns: 96px auto 44px;
+    grid-template-columns: 6rem auto 2.75rem;
     background-color: var(--primary);
     color: var(--background);
 }
 
 .hdr-top img {
-    width: 96px;
+    width: 6rem;
     height: auto;
 }
 
-header span {
+.hdr-top span {
     display: inline-block;
     width: 75%;
     text-align: left;
     align-self: center;
     font-family: var(--headingFont);
     font-size: 2rem;
-    padding-left: 10px;
+    padding-left: .6rem;
     background-color: var(--primary);
     color: var(--background);
 }
@@ -104,7 +104,7 @@ header span {
 
 .navigation {
     display: none;
-    margin-top: 10px;
+    margin-top: .6rem;
 }
 
 .navigation.show {
@@ -113,8 +113,7 @@ header span {
 
 nav ul li {
     text-decoration: none;
-    min-width: 280px;
-    padding: 8px;
+    min-width: 17.5rem;
 }
 
 nav ul {
@@ -122,6 +121,8 @@ nav ul {
 }
 
 nav a {
+    display: block;
+    padding: .75rem 1.5rem;
     text-decoration: none;
 }
 
@@ -130,17 +131,24 @@ nav a {
     font-weight: 700;
 }
 
+main {
+    text-align: center;
+}
+
 #filter-modal {
     padding: .3rem;
     margin: 1.3rem;
+    width: 99%;
+    max-width: 18rem;
 }
 
-.modal-content, .modal-content select {
+#modal-content .label-heading {
     text-align: center;
 }
 
 .modal-content select {
-    padding: 5px;
+    padding: .3rem;
+    margin-top: .2rem;
 }
 
 ::backdrop {
@@ -149,8 +157,8 @@ nav a {
 
 #nav-button,
 #social a img {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
 }
 
 body {
@@ -180,8 +188,7 @@ h1 {
 }
 
 h2 {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin: .5rem 0;
     font-size: 1.75rem;
 }
 
@@ -189,11 +196,16 @@ h3 {
     text-align: center;
     padding: .5rem;
     border-bottom: var(--thinBorder);
+    width: 100%;
 }
 
 main p {
-    padding: 5px;
+    padding: .3rem;
     text-align: center;
+}
+
+summary {
+    list-style: none;
 }
 
 .form-container {
@@ -218,9 +230,11 @@ main p {
 
 .nonflip-card {
     width: 99%;
+    max-width: 19.4rem;
 }
 
 .flip-card {
+    max-width: 19.4rem;
     background-color: transparent;
     perspective: 1000px;
     box-shadow: 0 4px 8px 0 #74226C33, 0 6px 20px 0 #74226C30;
@@ -264,20 +278,15 @@ main p {
     flex-direction: column;
 }
 
-.flip-card-back h3 {
-    width: 85%;
-    margin-top: 3px;
-}
-
 .flip-card-back p {
-    padding: 10px;
+    padding: .6rem;
 }
 
 .flip-card-back button {
     padding: .5rem;
     font-weight: 700;
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: .3rem;
 }
 
 .card-img {
@@ -303,11 +312,11 @@ fieldset {
     padding: .75rem;
     width: 100%;
     min-width: 0;
-    max-width:500px;
+    max-width: 31.25rem;
 }
 
 legend {
-    padding: 0 .5rem;
+    padding: .3rem .6rem;
     font-size: 1.25rem;
     font-weight: 600;
     text-align: left;
@@ -317,6 +326,7 @@ legend {
 
 label, .label-heading {
     display: block;
+    text-align: left;
 }
 
 .input {
@@ -333,7 +343,7 @@ label, .label-heading {
 }
 
 input[type="radio"] {
-    margin-right: 2px;
+    margin-right: .125rem;
 }
 
 input[type="text"],
@@ -343,8 +353,9 @@ textarea {
     background-color: var(--input);
     padding: .75rem;
     width: 100%;
-    min-width: 250px;
-    max-width: 450px;
+    min-width: 15.6rem;
+    max-width: 28.125rem;
+    margin-top: .2rem;
 }
 
 input[type="submit"],
@@ -353,10 +364,17 @@ input[type="submit"],
     background-image: linear-gradient(var(--input), var(--accent2));
     padding: .8rem;
     width: 99%;
-    max-width: 400px;
-    margin: 1rem auto;
+    max-width: 25rem;
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+input[type="submit"], #close-button {
+    margin: .75rem 0;
+}
+
+#book-filter-button {
+    margin: .2rem 0 .8rem;
 }
 
 input:required,
@@ -376,11 +394,11 @@ textarea:required:valid {
 
 #social, #copyright {
     border-radius: 0;
-    padding-top: 10px;
+    padding-top: .6rem;
 }
 
 #copyright {
-    padding-bottom: 10px;
+    padding-bottom: .6rem;
 }
 
 /* #subscribe {
@@ -394,7 +412,7 @@ textarea:required:valid {
 } */
 
 footer {
-    margin-top: 10px;
+    margin-top: .6rem;
     font-size: .9rem;
     background-color: var(--primary);
 }
