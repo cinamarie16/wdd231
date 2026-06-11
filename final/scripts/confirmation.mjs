@@ -1,9 +1,5 @@
 import { mobileNav } from "./navigation.mjs";
-import { getYear } from "./date.mjs";
-import { lastMod } from "./date.mjs";
-
-
-
+import { getYear, lastMod } from "./date.mjs";
 
 mobileNav()
 getYear()
@@ -16,13 +12,3 @@ document.querySelector('#results').innerHTML = `
 <p>Your message: ${myInfo.get('comments')}</p>
 <p>Your newsletter subscription choice: ${myInfo.get('newsletter')}</p>
 `
-
-// const signupsDisplay = document.querySelector(".sign-ups");
-
-// let numSignups = Number(window.localStorage.getItem("numSignups-ls")) || 0;
-
-// signupsDisplay.textContent = numSignups;
-
-// numSignups++;
-
-// localStorage.setItem("numSignups-ls", numSignups);

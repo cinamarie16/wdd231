@@ -19,7 +19,6 @@ const subSelectMap = {
 
 function updateBookDisplay(bookList) {
     // console.log("sending to displayBookCards:", bookList);
-    
     displayBookCards(bookList);
 }
 

@@ -1,6 +1,5 @@
 import { mobileNav } from "./navigation.mjs";
-import { getYear } from "./date.mjs";
-import { lastMod } from "./date.mjs";
+import { getYear, lastMod } from "./date.mjs";
 import { saveTextarea } from "./local-store-mod.mjs";
 import { authors, createFlipCard } from "./author-mod.mjs";
 
